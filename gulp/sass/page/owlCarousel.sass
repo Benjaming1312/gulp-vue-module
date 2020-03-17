@@ -1,0 +1,35 @@
+.banner
+  padding: 0
+  position: relative
+  @media #{$mobile}
+    padding-top: 120px
+  .col-xs-12
+    padding: 0
+  .text
+    position: absolute
+    top: 0
+    right: 0
+    width: 50%
+    height: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    *
+      color: white
+    p
+      display: block
+      width: 100%
+      font-size: 64px
+      margin-bottom: 0
+      @media #{$mobile}
+        font-size: 16px
+      b
+        font-size: 90px
+        font-weight: bolder
+        margin-right: 0.5rem
+        @media #{$mobile}
+          font-size: 20px
+      &+p
+        padding-left: 13rem
+        @media #{$mobile}
+          padding-left: 2rem

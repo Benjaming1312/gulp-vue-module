@@ -1,40 +1,36 @@
-include ../custom_module/title.pug
-footer.foot.container-fluid
-    .row
-        .container
-            .row
-                +header-title('Contact us', '聯絡我們')
-                article.col-xs-12
-                    img.logo.img-responsive(src="dist/images/footer-logo.svg", alt="")
-                    p
-                        a(href="mailto:lsptw@knac.com.tw") lsptw@knac.com.tw
-                footer.col-xs-12
-                    ul.list-inline
-                        li
-                            a(href="")
-                                img(src="dist/images/social-icon-fb.svg", alt="")
-                        li
-                            a(href="")
-                                img(src="dist/images/social-icon-linkin.svg", alt="")
-                        li
-                            a(href="")
-                                img(src="dist/images/social-icon-ig.svg", alt="")
-                        li
-                            a(href="")
-                                img(src="dist/images/social-icon-google.svg", alt="")
-                        li
-                            a(href="")
-                                img(src="dist/images/social-icon-twitter.svg", alt="")
-                        li
-                            a(href="")
-                                img(src="dist/images/social-icon-line@.svg", alt="")
-                        li
-                            a(href="")
-                                img(src="dist/images/social-icon-edm.svg", alt="")
-    .row
-        article.col-xs-12
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14460.124084039391!2d121.5531937!3d25.0330213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedda4225bb1305b9!2z5o236YGL5L-h576p5a6J5ZKM56uZ!5e0!3m2!1szh-TW!2stw!4v1506313836554" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        footer.col-xs-12
-            p.text-center
-                span © 2015~2017 LSP Taiwan 台灣樂高認真玩  All rights reserved.  版權資訊　
-                a(href="http://redmedia.tw" target="_blank") +網頁設計+
+- var url = '/ezfiles/671/1671/img/8854/'
+footer.foot.container.bg-grey
+	.row
+		.col.map
+			ul.list-inline
+				li
+					a.fz16(href="") 網站地圖
+				li
+					a.fz16(href="") 服務據點
+		.col
+			p.fz14
+				span.svg(style="background:url("+url+"foot-icon-1.svg); width: 15px; height: 23px;")
+				a.fz14(href="tel: (02) 2278 -7189 ") (02) 2278 -7189 
+			p.fz14
+				span.svg(style="background:url("+url+"fax.svg); width: 20px; height: 19px;")
+				span.fz14 (02)2278-7101
+		.col
+			p.fz14
+				span.svg(style="background:url("+url+"foot-icon-2.svg); width: 20px; height: 12px;")
+				a(href="mailto:hrm@cecsmaitl.com.tw") hrm@cecsmaitl.com.tw
+			p.fz14
+				span.svg(style="background:url("+url+"foot-icon-2.svg); width: 20px; height: 12px;")
+				a(href="mailto:hrm@cecsmaitl.com.tw") rosina@cecsmail.com.tw
+		.col
+			p.fz14
+				span.svg(style="background:url("+url+"foot-icon-3.svg); width: 20px; height: 18px;")
+				a(href="https://goo.gl/maps/euz4zZZZE6etiuXY9" target="_blank") 新北市三重區重新路五段609巷10號4樓之2
+		.col
+			p.fz14
+				span.svg(style="background:url("+url+"home.svg); width: 20px; height: 15px;")
+				a.fz14(href="http://www.cecs.tw" target="_blank") http://www.cecs.tw
+			//- span.svg(style="background:url("+url+"logo.svg); width: 214px; height: 59px;")
+.copy.container-fluid.bg-green
+	p.text-center
+		span.fz12 2013 © 天鷹保全股份有限公司
+		a.fz12(href="http://www.e-creation.com.tw" target="_blank") Design by 藝創媒體

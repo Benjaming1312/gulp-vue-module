@@ -1,0 +1,44 @@
+.module-rcglist
+  @media #{$mobile}
+    padding: 0 30px
+  .mt
+    display: none
+  .d-item
+    margin-bottom: 30px
+    transition: $trans
+    &:hover
+      opacity: 0.7
+    .mbox
+      padding: 0 15px
+    .mdate
+      color: #aaa
+      font-weight: bold
+      display: block
+      font-size: 13px
+    h5
+      margin-top: 0
+      a
+        font-weight: bold
+        font-size: 18px
+    .d-img
+      max-width: 50%
+      @media #{$mobile}
+        max-width: 100%
+        width: 100%
+    .d-txt
+      max-width: 50%
+      padding-left: 15px
+      @media #{$mobile}
+        max-width: 100%
+        width: 100%
+        padding-left: 0
+.mpgbar
+  .mbtn
+    background: #000
+    border-radius: 0
+    border-color: #000
+    transition: $trans
+    color: white
+    &:hover
+      background: none
+      color: #000

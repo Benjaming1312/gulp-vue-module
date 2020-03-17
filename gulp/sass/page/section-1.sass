@@ -1,0 +1,42 @@
+.idx.section-1
+  margin-top: 40px
+  margin-bottom: 70px
+  @media #{$mobile}
+    margin-top: 30px
+    margin-bottom: 30px
+  .module-title
+    margin-bottom: 40px
+  .row.list
+    padding: 0 45px
+    display: flex
+    flex-wrap: wrap
+    @media #{$mobile}
+      padding: 0px
+    [class*="col-"]
+      margin-bottom: 86px
+      // background: #fff
+      overflow: hidden
+      @media #{$mobile}
+        margin-bottom: 30px 
+      .img
+        position: relative
+        img
+          width: 100%
+        figcaption
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          color: white
+          padding: 5px
+          font-weight: bold
+      .text
+        padding: 15px
+        height: 100%
+        background: #fff
+        p
+          color: #26282D
+          font-weight: 500
+          margin-bottom: 15px
+          &:last-child
+            margin-bottom: 0

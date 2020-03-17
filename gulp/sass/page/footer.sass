@@ -1,0 +1,97 @@
+footer.foot.foot
+  width: 100%
+  max-width: initial
+  padding: 30px 0
+  background: #fff
+  @media #{$mobile}
+    padding: 15px 5px
+  .row
+    display: flex
+    justify-content: space-around
+    flex-wrap: nowrap
+    @media #{$mobile}
+      flex-wrap: wrap
+      justify-content: flex-start
+    .col
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      // border-right: 1px solid #888888
+      padding-right: 15px
+      padding-top: 5px
+      padding-bottom: 5px
+      flex-wrap: wrap
+      width: calc(100% / 4)
+      text-align: left
+      padding-left: 30px
+      @media #{$mobile}
+        border: 0
+        margin-bottom: 0px
+        width: 100%
+      p+p
+        margin-top: 10px
+      p,a
+        color: #26282D
+        font-size: 18px
+        white-space: nowrap
+        @media #{$mobile}
+          white-space: initial
+          margin-bottom: 0
+      .fz14
+        font-size: 14px
+        a
+          font-size: 14px
+      p
+        display: flex
+        align-items: center
+        margin-bottom: 0
+        @media #{$mobile}
+          width: 100%
+        .svg
+          margin-right: 5px
+          @media #{$mobile}
+            margin-right: 15px
+      &:last-child
+        border: 0
+        padding-right: 0
+      &.map
+        @media #{$mobile}
+          width: 100%
+        .list-inline
+          margin-bottom: 0
+          @media #{$mobile}
+            display: block
+            width: 100%
+          li
+            padding: 0
+          li:first-child
+            a
+              &::after
+                content: '|'
+                font-size: 14px
+                color: #2D2D2D
+                display: inline-block
+                margin: 0 1rem
+                margin-left: 1.5rem
+        *
+          color: #2D2D2D
+          font-weight: bold
+.copy
+  // background: #fff
+  @extend .bg-grey
+  padding: 15px 0
+  text-align: center
+  span, a
+    color: #9B9B9B
+    font-weight: normal
+  span
+    &::after
+      content: ''
+      display: inline-block
+      background: #9B9B9B
+      width: 3px
+      height: 3px
+      border-radius: 50%
+      position: relative
+      top: -2px
+      margin: 0 5px

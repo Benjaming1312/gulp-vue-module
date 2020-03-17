@@ -1,0 +1,127 @@
+.tel
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 15px
+  color: $color-b
+  position: absolute
+  top: 0
+  right: -30px
+  height: 57px
+  width: 33%
+  max-width: 321px
+  @media #{$mobile}
+    width: 100%
+    position: static
+    height: auto
+    padding-top: 5px
+    padding-bottom: 5px
+    float: left
+    max-width: 100%
+  a
+    @extend .fz24
+    font-weight: bold
+    @media #{$mobile}
+      display: block
+      width: 100%
+      text-align: center
+.header.header.header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 9999
+  background: rgba(#fff, .5)
+  min-height: 120px
+  padding-left: 30px
+  padding-right: 30px
+  @media #{$mobile}
+    background: #fff
+    padding-left: 0px
+    padding-right: 0px
+  .navbar-brand
+    margin-left: 0
+    @media #{$mobile}
+      max-width: 250px
+  .sr-only
+    display: none
+  .navbar
+    border: 0
+    padding-top: 30px
+    @media #{$mobile}
+      padding-top: 0
+      padding-left: 15px
+      padding-right: 15px
+      padding-top: 5px
+  .navbar-toggle
+    margin: 15px
+    border: 0
+    margin-top: 10px
+    .icon-bar
+      width: 30px
+      margin-top: .5rem
+      background: $color-b
+      display: block
+      &::before,
+      &::after
+        display: none
+  #navbar
+    padding-top: 35px
+    @media #{$mobile}
+      padding-top: 0
+      padding-left: 0
+      padding-right: 0
+      overflow: hidden
+    li
+      margin: 0
+      padding: 0
+      @media #{$mobile}
+        margin-bottom: 1rem
+      a
+        @extend .fz20
+        color: $color-b
+        font-weight: bold
+        padding: 0 2.5vw .5rem
+        position: relative
+        border: 0
+        transition: $trans
+        &:hover
+          transform: scale(1.1)
+          font-weight: bolder
+          text-shadow: 0px 0px 1px $color-b
+      &.open
+        >a
+          transform: scale(1.1)
+          font-weight: bolder
+          text-shadow: 0px 0px 1px $color-b
+      .dropdown-menu
+        @media #{$mobile}
+          margin-top: 15px
+      @media screen and (min-width: 768px)
+        &.dropdown
+          .dropdown-menu
+            background: rgba(#fff, .7)
+            box-shadow: 0 0 7px #ccc
+          &:hover,
+          &.open
+            >a
+              background-color: $color-n
+            .dropdown-menu
+              display: block
+              left: 0
+              padding: .5rem
+              box-shadow: none
+              border: 0
+              width: 100%
+              min-width: initial
+              li
+                margin-bottom: .5rem
+                a
+                  padding: 0 0rem 0 0rem
+                  text-align: center
+                  &::after
+                    display: none
+
+      &:last-child
+        a::after
+          display: none

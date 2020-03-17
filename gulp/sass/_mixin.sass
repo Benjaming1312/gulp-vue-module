@@ -5,13 +5,18 @@ $color-3: #00913a
 $color-4: #ffb600
 $color-5: #ea5514
 $color-n: transparent
-$color-b: #3e3a39
+$color-b: #3F3F3F
 $color-b2: #727171
 $color-menu: #f1efea
-$color-gray: #efefef
 $color-red: darken(red, 10%)
-$color-blue: #171c61
-
+$color-blue: #203964
+$color-orange: #fab701
+$color-yellow: #EEC420
+$color-grey: #898989
+$color-gray: #898989
+$color-green: #88bfb1
+$color-green: #2f5359
+$color-skyblue: #339dd1
 /*RWD*/
 $mobile: "screen and (max-width:767px)"
 $pad: "(min-width:768px) and (max-width:991px)"
@@ -24,7 +29,7 @@ $fm-1: "FangSong","LiSong Pro Light","STFangsong","sans-serif"
 // 標楷體
 $fm-kai: "DFKai-sb","標楷體","sans-serif"
 
-$fm-google: "Noto Sans TC","微軟正黑體","sans-serif" // google
+$fm-google: "微軟正黑體", "Microsoft JhengHei", "sans-serif" // google
 $fm-google-FS: 'cwTeXFangSong', serif // 仿宋
 $fm-gogole-Kai: 'cwTeXKai', serif // 楷體
 $fm-gogole-Ming: 'cwTeXMing', serif // 明體
@@ -79,13 +84,19 @@ $fm-cn: "Microsoft YaHei","SimHei","LiHei Pro Medium","SimHei","sans-serif"
 @mixin radial-gradient($radial, $fromColor, $toColor)
 	background: radial-gradient($radial, $fromColor, $toColor)
 a
-    &:hover,&:focus,&:focus
-        text-decoration: none
-        outline: none
-*
-    font-family: $fm-google
-    font-size: 16px
-    letter-spacing: .1em
+	&:hover,&:focus,&:focus
+		text-decoration: none!important
+		outline: none!important
+.wrap
+	*
+		font-family: $fm-google
+		font-size: 16px
+body
+	.wrap.wrap.wrap.wrap.wrap
+		*
+			font-family: $fm-google
+
+$url: '/dist/images/'
 
 @mixin idx-h3-title
 	font-size: 26px
@@ -95,3 +106,8 @@ a
 	font-size: 22px
 	margin-top: 0.5em
 	color: $color-blue
+$trans: .3s ease-in-out
+
+@for $i from 10 through 1000
+	.fz#{$i}
+		font-size: #{$i}px

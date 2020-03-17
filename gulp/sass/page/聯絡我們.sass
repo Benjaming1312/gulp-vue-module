@@ -1,0 +1,75 @@
+.contact
+  .title
+    font-size: 24px
+    font-weight: bold
+    margin-bottom: 30px
+    iframe
+      width: 100%!important
+  .content
+    margin-top: 30px
+    @media #{$mobile}
+      margin-top: 30px
+    p
+      b
+        display: block
+        font-size: 14px
+        @media #{$mobile}
+          white-space: nowrap
+          font-size: 15px
+          margin-bottom: 15px
+    p,a
+      font-size: 14px
+      font-weight: bold
+      @media #{$mobile}
+        font-size: 14px
+    a
+      color: $color-yellow
+      margin-left: 0.5rem
+    table
+      tr
+        td
+          padding: 0.5rem 0rem
+          font-size: 14px
+          font-weight: bold
+          @media #{$mobile}
+            font-size: 12px
+          &:first-child
+            text-align: right
+  .form
+    padding-left: 60px
+    @media #{$mobile}
+      padding-left: 0
+      margin-top: 60px
+    p
+      font-size: 14px
+
+  .module-form
+    padding-right: 60px
+    @media #{$mobile}
+      padding-right: 0
+    *
+      font-size: 14px
+    .mt
+      display: none
+    .formBS
+      border: 0
+    .form-group
+      border: 0
+      margin-bottom: 15px
+    .col-sm-3, .col-sm-9
+      border: 0!important
+      width: 100%
+    .form-btn
+      text-align: left
+      padding-left: 16px
+      
+    .btn
+      background: #000
+      color: white
+      border-radius: 0
+      border-color: #000000
+      transition: $trans
+      font-weight: bold
+      &:hover
+        color: #000
+        background: $color-n
